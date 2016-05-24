@@ -311,22 +311,26 @@
                             <fieldset>
                                 <legend>Fieldset legend</legend>
 
-                                <div class="field">
-                                    <label for="onefield">Text field</label>
-                                    <span class="fieldRequired" title="Required">(Required)</span>
-                                    <div class="formHelp">
-                                        This is the help for this form field. And <a href="#">links are also possible</a>.
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Text Field</label>
+                                        <!-- <span class="fieldRequired" title="Required">Required</span> -->
+                                        <div class="formHelp">
+                                            This is the help for this form field. And <a href="#">links are also possible</a>.
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Some content" id="email" required>
                                     </div>
-                                    <input type="text" id="onefield" value="Some content">
                                 </div>
-                                <div class="field error">
-                                    <label for="anotherfield">Text field with error</label>
-                                    <span class="fieldRequired" title="Required">(Required)</span>
-                                    <div class="formHelp">
-                                        This field is just here to demonstrate an error message.
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls input-error">
+                                        <label>Text field with error</label>
+                                        <!-- <span class="fieldRequired" title="Required">Required</span> -->
+                                        <div class="formHelp">
+                                            This field is just here to demonstrate an error message.
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Some content" id="email" required>
+                                        <p class="help-block text-danger"></p>
                                     </div>
-                                    <div>This is the error message.</div>
-                                    <input type="text" id="anotherfield" value="Some content">
                                 </div>
                                 <div class="field">
                                     <label for="onecheckbox">Checkbox</label>

@@ -8,6 +8,13 @@
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+// ===============
+// VARIABLES
+// ===============
+$dark-grey: #404040;
+$light-grey: #808080;
+$teal: #0085a1;
+$alert-danger: #a94442;
 
 // ===============
 // PORTLETS
@@ -15,7 +22,7 @@
 
 aside{
 	section{
-		border: 2px solid #777777;
+		border: 2px solid $dark-grey;
 		// border-radius: 2%;
 
 	}
@@ -23,9 +30,9 @@ aside{
 		@include font-opensans();
 		font-weight: 600 !important;
 		padding: 15px 20px;
-		background: #777;
+		background: $dark-grey;
 		color: #fff;
-		border-bottom: 2px solid #777777;
+		border-bottom: 2px solid $dark-grey;
 
 	}
 	.portlet--item{
@@ -37,24 +44,27 @@ aside{
 	}
 	.portlet--content{
 		padding: 15px 10px;
-		input{
-			margin: 5px auto;
+		form{
+			margin: 5px;
 		}
-		input[type=submit]{
-			@include font-opensans();
-			color: #fff;
-			background: #222;
-			border: 2px solid #222;
-			text-transform: uppercase;
-			font-size: 16px;
-			padding: 5px 10px;
-		}
+		// input{
+		// 	margin: 5px auto;
+		// }
+		// input[type=submit]{
+		// 	@include font-opensans();
+		// 	color: #fff;
+		// 	background: #222;
+		// 	border: 2px solid #222;
+		// 	text-transform: uppercase;
+		// 	font-size: 16px;
+		// 	padding: 5px 10px;
+		// }
 	}
 	.portlet--footer{
 		font-size: 16px;
 		background: #eee;
 		padding: 10px 20px;
-		border-top: 2px solid #777777;
+		border-top: 2px solid $dark-grey;
 	}
 }
 
@@ -87,4 +97,29 @@ aside{
 	.table-bordered{
 		border: 1px solid #777777;
 	}
+}
+
+form{
+.floating-label-form-group {
+  border-bottom: none !important;
+  input{
+  	border-bottom: 1px solid $light-grey;
+  	&:focus{
+  		border-bottom:2px solid $teal;
+  	}
+  }
+}
+.input-error{
+	border: none !important;
+	color: $alert-danger;
+	label{
+		color: $alert-danger;
+	}
+	input{
+		border-bottom: 1px solid $alert-danger;
+		&:focus{
+			border-bottom:2px solid $alert-danger;
+		}
+	}
+}
 }

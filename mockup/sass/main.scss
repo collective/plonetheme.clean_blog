@@ -14,7 +14,10 @@
 $dark-grey: #404040;
 $light-grey: #808080;
 $teal: #0085a1;
-$alert-danger: #a94442;
+$danger: #FC5353;
+$success: #5cb85c;
+$info: #46b8da;
+$warning: #f0ad4e;
 
 // ===============
 // PORTLETS
@@ -99,6 +102,10 @@ aside{
 	}
 }
 
+// ===========
+// FORM ELEMENTS
+// ===========
+
 form{
 .floating-label-form-group {
   border-bottom: none !important;
@@ -111,15 +118,81 @@ form{
 }
 .input-error{
 	border: none !important;
-	color: $alert-danger;
+	color: $danger;
 	label{
-		color: $alert-danger;
+		color: $danger;
 	}
 	input{
-		border-bottom: 1px solid $alert-danger;
+		border-bottom: 1px solid $danger;
 		&:focus{
-			border-bottom:2px solid $alert-danger;
+			border-bottom:2px solid $danger;
 		}
 	}
 }
+.field{
+	margin-bottom: 20px;
+}
+.formHelp{
+	font-size: 14px;
+	}
+}
+
+
+// ===========
+// BUTTONS
+// ===========
+.btn{
+	margin: 2px;
+}
+.btn-danger{
+	border-color: $danger;
+	background-color: #fff;
+	color: $danger;
+	&:hover,&:focus{
+		background: $danger;
+		color: #fff;
+	}
+}
+.btn-primary{
+	border-color: $teal;
+	background-color: #fff;
+	color: $teal;
+	&:hover,&:focus{
+		background: $teal;
+		color: #fff;
+	}
+}
+.btn-success{
+	border-color: $success;
+	background-color: #fff;
+	color: $success;
+	&:hover,&:focus{
+		background: $success;
+		color: #fff;
+	}
+}
+.btn-info{
+	border-color: $info;
+	background-color: #fff;
+	color: $info;
+	&:hover,&:focus{
+		background: $info;
+		color: #fff;
+	}
+}
+.btn-warning{
+	border-color: $warning;
+	background-color: #fff;
+	color: $warning;
+	&:hover,&:focus{
+		background: $warning;
+		color: #fff;
+	}
+}
+.btn-link{
+	color: $dark-grey;
+	&:hover,&:focus{
+		text-decoration: underline;
+		color: $teal;
+	}
 }

@@ -340,7 +340,7 @@
                                     </div>
                                     <input type="checkbox" id="onecheckbox">
                                 </div>
-                                <div class="field error">
+                                <div class="field input-error">
                                     <label for="anothercheckbox">Checkbox with error</label>
                                     <span class="fieldRequired" title="Required">(Required)</span>
                                     <div class="formHelp">
@@ -357,7 +357,7 @@
                                     </div>
                                     <input type="checkbox" class="noborder" id="onestylishcheckbox">
                                 </div>
-                                <div class="field error">
+                                <div class="field input-error">
                                     <label for="anotherstylishcheckbox">
                                     Checkbox without border with error</label>
                                     <span class="fieldRequired" title="Required">(Required)</span>
@@ -407,16 +407,15 @@
                                     <br>
                                 </div>
                                 <div class="formControls">
-                                    <input class="context" type="submit" value="Context submit">
-                                    <input class="standalone" type="submit" value="Standalone submit">
-                                    <input class="destructive" type="submit" value="Destructive submit">
-                                    <input type="submit" value="Submit">
+                                    <input class="btn btn-default" type="submit" value="Default">
+                                    <input class="btn btn-primary" type="submit" value="Primary">
+                                    <input class="btn btn-danger" type="submit" value="Danger">
+                                    <input type="submit" class="btn btn-success" value="Success">
                                 </div>
                                 <div class="formControls">
-                                    <input class="context" type="button" value="Context button">
-                                    <input class="standalone" type="button" value="Standalone button">
-                                    <input class="destructive" type="button" value="Destructive button">
-                                    <input type="button" value="Button">
+                                    <input class="btn btn-info" type="button" value="Info">
+                                    <input class="btn btn-warning" type="button" value="Warning">
+                                    <input class="btn btn-link" type="button" value="Link">
                                 </div>
                             </fieldset>
                         </form>
@@ -424,7 +423,7 @@
                         <h2>Table with form elements</h2>
 
                         <form>
-                            <table id="sortable" class="listing" summary="Content listing" cellpadding="0" cellspacing="0">
+                            <table class="table-bordered table table-striped">
                                 <thead>
                                     <tr>
                                         <th class="nosort">

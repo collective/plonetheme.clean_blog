@@ -13,6 +13,7 @@
 // ===============
 $dark-grey: #404040;
 $light-grey: #808080;
+$bg-grey: rgba(255,255,255,.9);
 $teal: #0085a1;
 $danger: #FC5353;
 $success: #5cb85c;
@@ -36,6 +37,14 @@ aside{
 		background: $dark-grey;
 		color: #fff;
 		border-bottom: 2px solid $dark-grey;
+		text-transform: uppercase;
+		a{
+			color: #fff;
+			&:hover{
+				color: $teal;
+				text-decoration: none;
+			}
+		}
 
 	}
 	.portlet--item{
@@ -68,6 +77,54 @@ aside{
 		background: #eee;
 		padding: 10px 20px;
 		border-top: 2px solid $dark-grey;
+	}
+
+	// Navigation portlet
+	nav{
+		background: #eee;
+		padding: 0 !important;
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				border-bottom: 1px outset #eee;
+				&:last-child{
+					border-bottom: none;
+				}
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding: 10px 15px;
+					&:hover{
+						background: #fff;
+						text-decoration: none;
+					}
+					img{
+						float: right;
+						margin-top: -15px;
+						cursor: inherit !important;
+					}
+				}
+				time{
+					font-size: 10px;
+					padding: 5px 15px;
+				}
+			}
+		}
+	}
+	.active{
+		background: #fff;
+		color: $teal;
+	}
+	.news a{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.recent-changes time{
+		// background-color: #fff;
 	}
 }
 
@@ -196,3 +253,7 @@ form{
 		color: $teal;
 	}
 }
+.btn-sm{
+	padding: 6px 12px !important;
+}
+

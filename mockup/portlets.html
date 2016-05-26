@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -91,32 +92,182 @@
             <div class="col-lg-3 col-xs-6">
                 <aside class="portlet">
                     <section>
-                        <header class="portlet--heading">Portlet Header</header>
+                        <header class="portlet--heading">Login</header>
                         <div class="portlet--content">
-                              There might be a login form here.
                               <form>
                                 <div class="row control-group">
                                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                                        <label>Email Address</label>
-                                        <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <label>Login Name</label>
+                                        <input type="email" class="form-control" placeholder="Login Name" id="email" required data-validation-required-message="Please enter your email address.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="row control-group">
                                     <div class="form-group col-xs-12 floating-label-form-group controls">
                                         <label>Password</label>
-                                        <input type="password" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Please enter your email address.">
+                                        <input type="password" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Password incorrect">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-xs-12">
-                                        <button type="submit" class="btn btn-default">Send</button>
+                                        <button type="submit" class="btn btn-default">Login</button>
                                     </div>
                                 </div>
                               </form>
                             </div>
-                        <footer class="portlet--footer">Portlet footer</footer>
+                        <footer class="portlet--footer"><a href="#">Forget your password?</a></footer>
+                    </section>
+                </aside>
+            </div>
+
+            <div class="col-lg-3 col-xs-6">
+                <aside class="portlet">
+                    <section>
+                        <header class="portlet--heading">Static Text Portlet</header>
+                        <div class="portlet--content">
+                              <h3>Heading</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatum cum odit. Vitae commodi minus ratione</p>
+                            </div>
+                        <footer class="portlet--footer"><a href="#">Footer text</a></footer>
+                    </section>
+                </aside>
+            </div>
+
+            <div class="col-lg-3 col-xs-6">
+                <aside class="portlet">
+                    <section>
+                        <header class="portlet--heading">Search</header>
+                        <div class="portlet--content">
+                            <form action="" class="">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <input type="search" class="form-control" placeholder="Search Site" id="email" required >
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <input type="submit" class="btn btn-default btn-sm" value="Search"></input>
+                            </form>
+                        </div>
+                        <footer class="portlet--footer"><a href="#">Advanced Search..</a></footer>
+                    </section>
+                </aside>
+            </div>
+
+            <div class="col-lg-3 col-xs-6">
+                <aside class="portlet">
+                    <section>
+                        <header class="portlet--heading">Navigation Portlet</header>
+                        <nav class="portlet--content">
+                        <ul>
+                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">Users</a></li>
+                        </ul>
+                        </nav>
+                    </section>
+                </aside>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-lg-3 col-xs-6">
+                <aside class="portlet">
+                    <section class="news">
+                        <header class="portlet--heading"><a href="">News</a></header>
+                        <nav class="portlet--content">
+                        <ul>
+                            <li>
+                                <a href="" class="active">Coding period has begun.
+                                <img src="" alt="">
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">Coding period has begun.
+                                <img src="https://summerofcode.withgoogle.com/static/img/summer-of-code-logo.svg" alt="">
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">Coding period has begun.
+                                <img src="https://summerofcode.withgoogle.com/static/img/summer-of-code-logo.svg" alt="">
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">Coding period has begun.
+                                <img src="" alt="">
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                        </ul>
+                        </nav>
+                        <footer class="portlet--footer"><a href="#">More news..</a></footer>
+                    </section>
+                </aside>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+                <aside class="portlet">
+                    <section class="events">
+                        <header class="portlet--heading"><a href="">Upcoming Events</a></header>
+                        <nav class="portlet--content">
+                        <ul>
+                            <li>
+                                <a href="" class="active">PloneConf 2016
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">PloneConf 2016
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">PloneConf 2016
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">PloneConf 2016
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                        </ul>
+                        </nav>
+                        <footer class="portlet--footer"><a href="#">More events..</a></footer>
+                    </section>
+                </aside>
+            </div>
+
+            <div class="col-lg-3 col-xs-6">
+                <aside class="portlet">
+                    <section class="recent-changes">
+                        <header class="portlet--heading"><a href="">Recent changes</a></header>
+                        <nav class="portlet--content">
+                        <ul>
+                            <li>
+                                <a href="" class="active">Welcome to Plone
+                                </a>
+                                <time>Jan 1, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">Users
+                                </a>
+                                <time>Jan 1, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">Welcome to Plone
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                            <li>
+                                <a href="" class="active">News
+                                </a>
+                                <time>May 23, 2016</time>
+                            </li>
+                        </ul>
+                        </nav>
+                        <footer class="portlet--footer"><a href="#">All recent changes..</a></footer>
                     </section>
                 </aside>
             </div>

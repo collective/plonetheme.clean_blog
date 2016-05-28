@@ -60,43 +60,7 @@
       css:content-children=".plone-navbar-nav"
       />
 
-    <!-- Portal-searchbox -->
-    <replace css:content='#portal-searchbox' css:theme='#portal-searchbox' />
 
-
-    <!-- login link -->
-
-    <after
-      css:theme-children=".navbar-nav"
-      css:content="#portal-anontools"
-      css:if-not-content=".ajax_load"
-      css:if-content=".userrole-anonymous"
-      />
-    <rules css:if-content="#portal-anontools" >
-      <strip css:content="div#portal-anontools ul" />
-      <strip css:content="#portal-anontools" />
-    </rules>
-
-    <!-- USER NAME (FOR LOGGED-IN USERS) -->
-    <replace
-      if-content="not(//li[@id='anon-personalbar'])"
-      content="//a[@id='user-name']/text()"
-      css:theme="#user-name"
-      />
-
-    <!-- USER ACTIONS (FOR LOGGED-IN USERS) -->
-    <replace
-      if-content="not(//li[@id='anon-personalbar'])"
-      css:content-children="#portal-personaltools .actionMenuContent ul"
-      css:theme-children="#action-menu-content"
-      />
-
-    <!-- BREADCRUMBS -->
-    <replace
-      css:content-children="div#portal-breadcrumbs"
-      css:theme-children="ol.breadcrumb"
-      />
-    <drop css:content="span#breadcrumbs-you-are-here" />
 
     <!-- EDIT BAR (CONTENT VIEWS) -->
     <replace
@@ -131,44 +95,16 @@
       css:content="#plone-contentmenu-workflow .arrowDownAlternative"
       />
 
-    <!-- CONTENT -->
-    <replace
-      css:content="#content"
-      css:theme-children="#content"
-      />
+      <replace css:theme="#target" css:content-children="#content" />
 
-    <!-- FOOTER -->
-    <replace
-      css:content="#portal-siteactions"
-      css:theme-children="footer"
-      />
+    <xsl:template match="a">
+        <xsl:copy>
+            <xsl:attribute name="target">_new</xsl:attribute>
+            <xsl:copy-of select="@*" />
+            <xsl:apply-templates />
+        </xsl:copy>
+    </xsl:template>
 
-    <!-- transform all portlets -->
-    <replace css:content=".portletWrapper">
-    <div class="pWwrapper">
-    <div class="portletWrapper">
-    <xsl:attribute name="data-portlethash"><xsl:value-of select="@data-portlethash"/></xsl:attribute>
-    <div class="panel panel-default">
-        <xsl:for-each css:select=".portletWrapper > dl">
-            <div class="panel-heading">
-              <xsl:copy-of select="dt/node()"/>
-           </div>
-          <div class="panel-body">
-           <xsl:for-each css:select="dd">
-             <div>
-                <xsl:if test="@class[contains(.,'portletFooter')]">
-                  <xsl:attribute name="class">panel-footer footer</xsl:attribute>
-               </xsl:if>
-              <xsl:copy-of select="node()"/>
-           </div>
-        </xsl:for-each>
-     </div>
-    </xsl:for-each>
-    </div>
-    </div>
-    </div>
-    </replace>
 
   </rules>
-
 </rules>

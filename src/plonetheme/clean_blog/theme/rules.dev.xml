@@ -43,68 +43,7 @@
       css:theme-children="html body"
       />
 
-    <!-- LOGO -->
-    <replace
-      css:theme=".navbar-brand"
-      css:content="#portal-logo"
-      />
-
-    <!-- PORTAL NAVIGATION -->
-    <replace
-      css:content-children="#portal-globalnav"
-      css:theme-children="#navbar"
-      />
-
-    <replace
-      css:theme-children=".navbar-nav"
-      css:content-children=".plone-navbar-nav"
-      />
-
-
-
-    <!-- EDIT BAR (CONTENT VIEWS) -->
-    <replace
-      css:content-children="#content-views"
-      css:theme-children="#contentViews"
-      />
-
-    <!-- EDIT BAR (DISPLAY) -->
-    <replace
-      css:content-children="#plone-contentmenu-display .actionMenuContent ul"
-      css:theme-children="#contentMenuDisplay"
-      />
-
-    <!-- EDIT BAR (ADD NEW) -->
-    <replace
-      css:content-children="#plone-contentmenu-factories .actionMenuContent ul"
-      css:theme-children="#contentMenuAddNew"
-      />
-
-    <!-- EDIT BAR (WORKFLOW STATE) -->
-    <replace
-      css:content-children="#plone-contentmenu-workflow .actionMenuContent ul"
-      css:theme-children="#contentMenuWorkflowState"
-      />
-    <!-- copy current workflow state into the -->
-    <replace
-      css:content="#plone-contentmenu-workflow .actionMenuHeader a span"
-      css:theme="#currentWorkflowState"
-      />
-    <!-- drop Plone dropdown arrow -->
-    <drop
-      css:content="#plone-contentmenu-workflow .arrowDownAlternative"
-      />
-
-      <replace css:theme="#target" css:content-children="#content" />
-
-    <xsl:template match="a">
-        <xsl:copy>
-            <xsl:attribute name="target">_new</xsl:attribute>
-            <xsl:copy-of select="@*" />
-            <xsl:apply-templates />
-        </xsl:copy>
-    </xsl:template>
-
+    <replace content="/html/body/@class"><xsl:attribute name="class"><xsl:value-of select="."/> mynew classes</xsl:attribute></replace>
 
   </rules>
 </rules>

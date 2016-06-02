@@ -992,7 +992,7 @@ $('#name').focus(function() {
 
 // Floating label headings for the contact form
 $(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+    $("body").on("input propertychange", "floating-label-form-group", function(e) {
         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
     }).on("focus", ".floating-label-form-group", function() {
         $(this).addClass("floating-label-form-group-with-focus");
@@ -1000,6 +1000,7 @@ $(function() {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
 });
+
 
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
@@ -1030,3 +1031,7 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+
+
+

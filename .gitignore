@@ -25,3 +25,8 @@ output.xml
 *.egg-info/
 .installed.cfg
 *.egg
+
+rules.orig.xml
+rules.dev.xml
+index.orig.html
+index.dev.html

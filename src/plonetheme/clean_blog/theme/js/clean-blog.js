@@ -959,3 +959,12 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+
+$("form :input").each(function(index, elem) {
+    var eId = $(elem).attr("id");
+    var label = null;
+    if (eId && (label = $(elem).parents("form").find("label[for="+eId+"]")).length == 1) {
+        $(elem).attr("placeholder", $.trim((label).html()).split('<span')[0]);
+    }
+ });

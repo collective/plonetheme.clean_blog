@@ -19,7 +19,7 @@
     background-color: #000;
     }
 
-.pat-livesearch{
+.LSBox{
 
 	min-width: 200px;
 	margin-top: 12px;
@@ -43,6 +43,18 @@
 	    line-height: 30px;
 	    margin: 1px 5px;
 	    float: left;
+	}
+
+	input:not([type="submit"]){
+		background: transparent;
+	    border: none;
+	    border-bottom: 2px solid @gray;
+	    color: @white-faded;
+		&:focus{
+			color: #fff;
+			outline: none;
+			border-bottom:2px solid @brand-primary;
+		}
 	}
 
 	.searchButton{
@@ -90,8 +102,8 @@
 		font-size: 12px;
 		left: 0px !important;
 		width: 240px !important;
-		.border--main;
-		box-shadow: none;
+		.border--main !important;
+		box-shadow: none !important;
 		li{
 			background: @gray-light;
 			h4{
@@ -128,14 +140,15 @@
    ========================================================================== */
 
 
-input:not([type="submit"]){
-	background: transparent;
-    border: none;
-    border-bottom: 2px solid @gray;
-    color: @white-faded;
-	&:focus{
-		color: #fff;
-		outline: none;
-		border-bottom:2px solid @brand-primary;
-	}
-}
+
+
+   input:not([type="submit"]){
+   	background: transparent;
+       border: none;
+       // border-bottom: 2px solid @gray;
+   	&:focus{
+   		outline: none;
+   		// border-bottom:2px solid @brand-primary;
+   	}
+   }
+

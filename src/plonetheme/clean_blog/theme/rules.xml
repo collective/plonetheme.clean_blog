@@ -86,22 +86,31 @@
  </replace>
 
 
-  <xsl:template match="//form//div/@class[contains(.,'field ')]">
+ <!-- full-width breadcrumb -->
+  <replace
+    css:theme-children="#above-content"
+    css:content-children="#viewlet-above-content"
+    />
+
+  <xsl:template match="//form//div/@class[contains(.,'')]">
       <xsl:attribute name="class">
         <xsl:value-of select="." /> floating-label-form-group
       </xsl:attribute>
   </xsl:template>
 
 
+  <xsl:template match="//footer//section//ul">
+        <xsl:copy>
+            <xsl:attribute name="class">list-inline</xsl:attribute>
+            <xsl:copy-of select="@*" />
+            <xsl:apply-templates />
+        </xsl:copy>
+    </xsl:template>
 
 
 
-  <!-- full-width breadcrumb -->
-  <replace
-    css:theme-children="#above-content"
-    css:content-children="#viewlet-above-content"
-    />
-   <drop css:content="#portal-breadcrumbs" />
+
+
 
   <!-- Alert message -->
   <replace
@@ -168,22 +177,22 @@
 
 
     <!-- Add Bootstrap message classes to Plone portalMessage classes -->
-    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'success')]">
+    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'success')] |//div//@class[contains(., 'success')]">
         <xsl:attribute name="class">
           <xsl:value-of select="." /> alert alert-success
         </xsl:attribute>
     </xsl:template>
-    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'info')]">
+    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'info')] | //div/@class[contains(., 'info')]">
         <xsl:attribute name="class">
           <xsl:value-of select="." /> alert alert-info
         </xsl:attribute>
     </xsl:template>
-    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'error')]">
+    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'error')]|//div//@class[contains(., 'error')]">
         <xsl:attribute name="class">
           <xsl:value-of select="." /> alert alert-danger
         </xsl:attribute>
     </xsl:template>
-    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'warning')]">
+    <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'warning')]|//div//@class[contains(., 'warning')]">
         <xsl:attribute name="class">
           <xsl:value-of select="." /> alert alert-warning
         </xsl:attribute>
@@ -191,7 +200,7 @@
 
 
   <!-- transform all portlets -->
-  <replace css:content=".portletWrapper">
+  <!-- <replace css:content=".portletWrapper">
   <div class="pWwrapper">
   <div class="portletWrapper">
   <xsl:attribute name="data-portlethash"><xsl:value-of select="@data-portlethash"/></xsl:attribute>
@@ -214,7 +223,7 @@
   </div>
   </div>
   </div>
-  </replace>
+  </replace> -->
 
 
 </rules>

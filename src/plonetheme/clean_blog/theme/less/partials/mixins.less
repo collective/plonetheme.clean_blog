@@ -140,7 +140,6 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -279,11 +278,16 @@ footer .copyright {
   font-size: 14px;
   position: relative;
   margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #808080;
+  // padding-bottom: 0.5em;
+  // border-bottom: 1px solid #808080;
 }
-.floating-label-form-group input,
+.floating-label-form-group input[type="text"],
+.floating-label-form-group input[type="search"],
+.floating-label-form-group input[type="password"],
+.floating-label-form-group input[type="email"],
 .floating-label-form-group textarea {
+  display: block;
+  width: 100%;
   z-index: 1;
   position: relative;
   padding-right: 0;
@@ -294,6 +298,7 @@ footer .copyright {
   background: none;
   box-shadow: none !important;
   resize: none;
+  border-bottom: 2px solid #808080;
 }
 .floating-label-form-group label {
   display: block;
@@ -311,6 +316,8 @@ footer .copyright {
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
 }
+
+
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eeeeee;

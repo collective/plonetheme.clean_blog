@@ -968,3 +968,4 @@ $("form :input").each(function(index, elem) {
         $(elem).attr("placeholder", $.trim((label).html()).split('<span')[0]);
     }
  });
+$("input:checkbox,input:radio").parents('div').removeClass('floating-label-form-group')

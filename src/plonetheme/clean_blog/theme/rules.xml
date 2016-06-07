@@ -39,7 +39,6 @@
 
 
 
-
  <!-- LOGO -->
  <replace
    css:theme=".navbar-brand"
@@ -111,7 +110,6 @@
 
 
 
-
   <!-- Alert message -->
   <replace
     css:theme-children="#global_statusmessage"
@@ -170,10 +168,9 @@
     </replace>
   </rules>
 
-  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+  <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />
 
   <!-- Content header -->
-  <!-- <replace css:theme="#portal-top" css:content-children="#portal-top" /> -->
 
 
     <!-- Add Bootstrap message classes to Plone portalMessage classes -->
@@ -198,32 +195,6 @@
         </xsl:attribute>
     </xsl:template>
 
-
-  <!-- transform all portlets -->
-  <!-- <replace css:content=".portletWrapper">
-  <div class="pWwrapper">
-  <div class="portletWrapper">
-  <xsl:attribute name="data-portlethash"><xsl:value-of select="@data-portlethash"/></xsl:attribute>
-  <div class="panel panel-default">
-      <xsl:for-each css:select=".portletWrapper > dl">
-          <div class="panel-heading">
-            <xsl:copy-of select="dt/node()"/>
-         </div>
-        <div class="panel-body">
-         <xsl:for-each css:select="dd">
-           <div>
-              <xsl:if test="@class[contains(.,'portletFooter')]">
-                <xsl:attribute name="class">panel-footer footer</xsl:attribute>
-             </xsl:if>
-            <xsl:copy-of select="node()"/>
-         </div>
-      </xsl:for-each>
-   </div>
-  </xsl:for-each>
-  </div>
-  </div>
-  </div>
-  </replace> -->
 
 
 </rules>

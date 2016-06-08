@@ -1,0 +1,42 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="plonetheme.clean_blog">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+
+  <plone:static
+      directory="theme"
+      type="theme"
+      name="plonetheme.clean_blog"
+      />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plonetheme.clean_blog"
+      directory="profiles/default"
+      description="Installs the plonetheme.clean_blog add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plonetheme.clean_blog (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the plonetheme.clean_blog add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="plonetheme.clean_blog-hiddenprofiles" />
+
+</configure>

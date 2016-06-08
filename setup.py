@@ -30,7 +30,7 @@ setup(
     keywords='Python Plone',
     author='Vikas Parashar',
     author_email='svnitvikas@gmail.com',
-    url='https://pypi.python.org/pypi/plonetheme.clean_blog',
+    url='https://github.com/vikas-parashar/plonetheme.clean_blog/',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['plonetheme'],

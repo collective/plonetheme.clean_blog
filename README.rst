@@ -1,7 +1,9 @@
 Clean Blog
 ==========
 
-A minimal theme for Plone 5. image
+A minimal theme for Plone 5.
+
+.. image:: https://raw.githubusercontent.com/vikas-parashar/plonetheme.clean_blog/master/demo.jpg
 
 Installation
 ------------
@@ -12,11 +14,20 @@ Zip file
 #. Download the `zip file`_
 #. Import the theme from the Diazo theme control panel.
 
-   .. rubric:: Buildout
+Buildout
+~~~~~~~~
 
-#. Add ``plonetheme.cleanblog`` to the list of eggs to install:
-   ``[buildout] ... eggs = ... plonetheme.cleanblog``
-#. Re-run buildout: ``$ ./bin/buildout``
+Install plonetheme.clean_blog by adding it to your buildout::
+
+    [buildout]
+
+    ...
+
+    eggs =
+        plonetheme.clean_blog
+
+
+and then running ``bin/buildout``
 
 Demo
 ~~~~

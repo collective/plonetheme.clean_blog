@@ -1,72 +1,47 @@
-.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
-   This text does not appear on pypi or github. It is a comment.
+Clean Blog
+==========
 
-==============================================================================
-plonetheme.clean_blog
-==============================================================================
-
-Tell me what your product does
-
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+A minimal theme for Plone 5. image
 
 Installation
 ------------
 
-Install plonetheme.clean_blog by adding it to your buildout::
+Zip file
+~~~~~~~~
 
-    [buildout]
+#. Download the `zip file`_
+#. Import the theme from the Diazo theme control panel.
 
-    ...
+   .. rubric:: Buildout
 
-    eggs =
-        plonetheme.clean_blog
+#. Add ``plonetheme.cleanblog`` to the list of eggs to install:
+   ``[buildout] ... eggs = ... plonetheme.cleanblog``
+#. Re-run buildout: ``$ ./bin/buildout``
 
+Demo
+~~~~
 
-and then running ``bin/buildout``
+   This theme can be seen in action at the following site:
 
+-  `Clean Blog`_
 
-Contribute
-----------
+Documentation
+-------------
 
-- Issue Tracker: https://github.com/collective/plonetheme.clean_blog/issues
-- Source Code: https://github.com/collective/plonetheme.clean_blog
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
-
+Full documentation for end users can be found here.
 
 License
 -------
 
-The project is licensed under the GPLv2.
+MIT License
+
+Credit
+------
+
+Based on `Clean Blog - Bootstrap Blog Theme - Start Bootstrap`_
+`License`_
+
+.. _zip file: https://github.com/vikas-parashar/plonetheme.clean_blog/blob/master/clean-blog.zip?raw=true
+.. _Clean Blog: http://107.170.136.197:8080/Plone
+.. _Clean Blog - Bootstrap Blog Theme - Start Bootstrap: http://startbootstrap.com/template-overviews/clean-blog/
+.. _License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE

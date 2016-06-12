@@ -19,6 +19,8 @@ src/*
 !src/plonetheme
 var/
 htmlcov/
+build/
+dist/
 .coverage
 *.log
 output.xml

@@ -1,3 +1,4 @@
+==========
 Clean Blog
 ==========
 
@@ -39,7 +40,7 @@ Demo
 Documentation
 -------------
 
-Full documentation for end users can be found here.
+Full documentation for end users can be found `here`_
 
 License
 -------
@@ -56,3 +57,4 @@ Based on `Clean Blog - Bootstrap Blog Theme - Start Bootstrap`_
 .. _Clean Blog: http://107.170.136.197:8080/Plone
 .. _Clean Blog - Bootstrap Blog Theme - Start Bootstrap: http://startbootstrap.com/template-overviews/clean-blog/
 .. _License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE
+.. _here: https://github.com/vikas-parashar/plonetheme.clean_blog/blob/master/docs/index.rst

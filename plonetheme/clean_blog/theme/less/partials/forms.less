@@ -23,6 +23,16 @@ input:not([type="submit"]){
 	color: @gray-dark;
 }
 
+.label-default{
+	background: #ddd;
+	color: @gray-dark*0.5;
+	font-weight: 900;
+}
+
+label .formHelp{
+	font-size: 14px;
+}
+
 select {
 
 	display: block;
@@ -151,4 +161,16 @@ input.destructive{
 
 a.btn{
 	text-decoration: none !important;
+}
+
+#upgrade-products .configlets .pull-right,
+#install-products .configlets .pull-right,
+#activated-products .configlets .pull-right,
+#broken-products .configlets .pull-right{
+	margin: auto;
+	float: right;
+}
+
+.field span.option{
+	display: block;
 }

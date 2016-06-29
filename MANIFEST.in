@@ -1,4 +1,5 @@
-graft src/plonetheme
-graft docs
-include *.rst
+recursive-include plonetheme *
+recursive-include docs *
+include *.rst *.js *.json *.html *.png *.zip
 global-exclude *.pyc
+

@@ -13,7 +13,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='plonetheme.cleanblog',
-    version='1.1',
+    version='1.2.dev0',
     description="A theme for Plone 5",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers

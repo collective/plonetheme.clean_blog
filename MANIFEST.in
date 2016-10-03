@@ -1,4 +1,5 @@
-recursive-include plonetheme *
-recursive-include docs *
+graft src/plonetheme
+graft docs
+include *.rst
 include *.rst *.js *.json *.html *.png *.zip *.jpg LICENSE
 global-exclude *.pyc

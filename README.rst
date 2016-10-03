@@ -42,6 +42,18 @@ Documentation
 
 Full documentation for end users can be found `here`_
 
+Contribution
+-------------
+
+- Clone the repo.
+- Run ``bin/buildout``
+- next, install the local dependencies theme requires
+    ``$ npm install``
+- Watch For Changes & Automatically Refresh
+    ``$ grunt watch``
+- Build & Optimize(This will create a ``dist`` folder with optimized files and a zip of theme)
+    ``$ grunt dist``
+
 License
 -------
 
@@ -52,7 +64,7 @@ Credit
 
 Based on `Clean Blog Bootstrap Blog Theme Start Bootstrap`_
 
-.. _zip file: https://github.com/vikas-parashar/plonetheme.clean_blog/blob/master/clean-blog.zip?raw=true
+.. _zip file: https://github.com/vikas-parashar/plonetheme.clean_blog/blob/master/plonetheme.clean_blog.zip?raw=true
 .. _Clean Blog Demo: http://107.170.136.197:8080/Plone
 .. _Clean Blog Bootstrap Blog Theme Start Bootstrap: http://startbootstrap.com/template-overviews/clean-blog/
 .. _here: https://github.com/vikas-parashar/plonetheme.clean_blog/blob/master/docs/index.rst

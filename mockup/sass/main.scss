@@ -1,0 +1,259 @@
+// ================
+// MIXIN
+// ================
+@mixin font-lora(){
+	font-family: 'Lora', 'Times New Roman', serif;
+}
+@mixin font-opensans(){
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+// ===============
+// VARIABLES
+// ===============
+$dark-grey: #404040;
+$light-grey: #808080;
+$bg-grey: rgba(255,255,255,.9);
+$teal: #0085a1;
+$danger: #FC5353;
+$success: #5cb85c;
+$info: #46b8da;
+$warning: #f0ad4e;
+
+// ===============
+// PORTLETS
+// ===============
+
+aside{
+	section{
+		border: 2px solid $dark-grey;
+		// border-radius: 2%;
+
+	}
+	.portlet--heading{
+		@include font-opensans();
+		font-weight: 600 !important;
+		padding: 15px 20px;
+		background: $dark-grey;
+		color: #fff;
+		border-bottom: 2px solid $dark-grey;
+		text-transform: uppercase;
+		a{
+			color: #fff;
+			&:hover{
+				color: $teal;
+				text-decoration: none;
+			}
+		}
+
+	}
+	.portlet--item{
+		margin: 15px auto;
+		li{
+			padding: 5px;
+		}
+
+	}
+	.portlet--content{
+		padding: 15px 10px;
+		form{
+			margin: 5px;
+		}
+		// input{
+		// 	margin: 5px auto;
+		// }
+		// input[type=submit]{
+		// 	@include font-opensans();
+		// 	color: #fff;
+		// 	background: #222;
+		// 	border: 2px solid #222;
+		// 	text-transform: uppercase;
+		// 	font-size: 16px;
+		// 	padding: 5px 10px;
+		// }
+	}
+	.portlet--footer{
+		font-size: 16px;
+		background: #eee;
+		padding: 10px 20px;
+		border-top: 2px solid $dark-grey;
+	}
+
+	// Navigation portlet
+	nav{
+		background: #eee;
+		padding: 0 !important;
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				border-bottom: 1px outset #eee;
+				&:last-child{
+					border-bottom: none;
+				}
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding: 10px 15px;
+					&:hover{
+						background: #fff;
+						text-decoration: none;
+					}
+					img{
+						float: right;
+						margin-top: -15px;
+						cursor: inherit !important;
+					}
+				}
+				time{
+					font-size: 10px;
+					padding: 5px 15px;
+				}
+			}
+		}
+	}
+	.active{
+		background: #fff;
+		color: $teal;
+	}
+	.news a{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.recent-changes time{
+		// background-color: #fff;
+	}
+}
+
+
+// ===============
+// TEST-CONTENT
+// ===============
+
+.test-content{
+
+	.documentFirstHeading{
+		// padding-bottom: 15px;
+		margin-bottom: 0px;
+		margin-top: 30px;
+		font-size: 36px;
+	}
+	.documentByLine{
+		color: #808080;
+		font-size: 18px;
+		font-style: italic;
+		margin-top: 0;
+	}
+	.documentDescription{
+		@include font-opensans();
+		font-size: 24px;
+		font-weight: 300;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.table-bordered{
+		border: 1px solid #777777;
+	}
+}
+
+// ===========
+// FORM ELEMENTS
+// ===========
+
+form{
+.floating-label-form-group {
+  border-bottom: none !important;
+  input{
+  	border-bottom: 1px solid $light-grey;
+  	&:focus{
+  		border-bottom:2px solid $teal;
+  	}
+  }
+}
+.input-error{
+	border: none !important;
+	color: $danger;
+	label{
+		color: $danger;
+	}
+	input{
+		border-bottom: 1px solid $danger;
+		&:focus{
+			border-bottom:2px solid $danger;
+		}
+	}
+}
+.field{
+	margin-bottom: 20px;
+}
+.formHelp{
+	font-size: 14px;
+	}
+}
+
+
+// ===========
+// BUTTONS
+// ===========
+.btn{
+	margin: 2px;
+}
+.btn-danger{
+	border-color: $danger;
+	background-color: #fff;
+	color: $danger;
+	&:hover,&:focus{
+		background: $danger;
+		color: #fff;
+	}
+}
+.btn-primary{
+	border-color: $teal;
+	background-color: #fff;
+	color: $teal;
+	&:hover,&:focus{
+		background: $teal;
+		color: #fff;
+	}
+}
+ .btn-success{
+	border-color: $success;
+	background-color: #fff;
+	color: $success;
+	&:hover,&:focus{
+		background: $success;
+		color: #fff;
+	}
+}
+.btn-info{
+	border-color: $info;
+	background-color: #fff;
+	color: $info;
+	&:hover,&:focus{
+		background: $info;
+		color: #fff;
+	}
+}
+.btn-warning{
+	border-color: $warning;
+	background-color: #fff;
+	color: $warning;
+	&:hover,&:focus{
+		background: $warning;
+		color: #fff;
+	}
+}
+.btn-link{
+	color: $dark-grey;
+	&:hover,&:focus{
+		text-decoration: underline;
+		color: $teal;
+	}
+}
+.btn-sm{
+	padding: 6px 12px !important;
+}
+

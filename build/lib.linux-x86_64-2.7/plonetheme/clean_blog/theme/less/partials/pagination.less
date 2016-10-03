@@ -1,0 +1,41 @@
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+
+
+
+
+
+.pagination{
+
+	li{
+
+		a{
+			.border--main !important;
+			padding: 6px 12px;
+			line-height: 1.42857143;
+			text-decoration: none !important;
+			color: @gray-dark;
+			background-color: #fff;
+			margin-left: -1px;
+			font-weight: 600;
+
+			&:hover{
+				color: @brand-primary;
+				background-color: #fff;
+				border: 1px solid @brand-primary !important;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.pagination li.active>span{
+	background-color: @brand-primary;
+	border: 1px solid @brand-primary !important;
+}
+.pagination li.disabled>span{
+	background-color: @gray-light;
+	border: 1px solid @gray !important;
+	color: @gray;
+}

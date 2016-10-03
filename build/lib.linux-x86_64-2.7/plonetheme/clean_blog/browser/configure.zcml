@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.clean_blog">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="plonetheme.clean_blog.interfaces.IPlonethemeCleanBlogLayer"
+      />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+      name="plonetheme.clean_blog"
+      directory="static"
+      />
+
+</configure>

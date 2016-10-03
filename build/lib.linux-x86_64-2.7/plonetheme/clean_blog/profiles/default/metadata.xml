@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <version>1000</version>
+  <dependencies>
+    <dependency>profile-plone.app.theming:default</dependency>
+    <!-- <dependency>profile-plonetheme.barceloneta:registerless</dependency> -->
+  </dependencies>
+</metadata>

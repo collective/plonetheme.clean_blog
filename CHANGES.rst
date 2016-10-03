@@ -5,7 +5,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- uploaded whole dirs.
+- Added grunt setup.
+- Updated docs.
 
 
 1.1 (2016-06-29)

@@ -1,0 +1,142 @@
+/* ==========================================================================
+   SEARCH PAGE AND LIVE SEARCH FIELD
+   ========================================================================== */
+
+
+
+
+.sr-only, .hiddenStructure, .crud-form .header-select {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   border: 0;
+   color: #fff;
+   background-color: #000;
+}
+
+.LSBox{
+
+      min-width: 200px;
+      margin-top: 12px;
+      margin-left: 20px;
+      input[type="text"],input[type="submit"]{
+         font-size: 12px;
+         height: 30px;
+         font-weight: 800;
+         text-transform: uppercase;
+      }
+
+      input[type="checkbox"] {
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          margin: 1px 5px;
+          float: left;
+      }
+
+      input:not([type="submit"]){
+         background: transparent;
+          border: none;
+          border-bottom: 2px solid @gray;
+          color: @white-faded;
+         &:focus{
+            color: #fff;
+            outline: none;
+         }
+      }
+
+      input[type="submit"]{
+
+         /* btn style */
+
+          display: inline-block;
+          padding: 4px 12px;
+          margin-bottom: 0;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 1.42857143;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -ms-touch-action: manipulation;
+          touch-action: manipulation;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          background-image: none;
+          border: 1px solid transparent;
+
+          /* btn style ends */
+
+         border-color: @gray;
+         background-color: #fff;
+         color: @gray-dark;
+         margin-left: 0;
+         margin-right: 10px;
+
+         &:hover,&:focus{
+            background: @brand-primary;
+            color: #fff;
+            outline: none;
+         }
+
+      }
+
+      label{
+         font-size: 12px;
+         color: #fff;
+      }
+
+      /* live search results */
+
+      .livesearch-results{
+         font-size: 12px;
+         left: 0px !important;
+         width: 240px !important;
+         .border--main !important;
+         box-shadow: none !important;
+         li{
+            background: @gray-light;
+            h4{
+               .font-lora;
+               a{
+                  color: @gray-dark !important;
+                  font-size: 16px;
+                  font-weight: 700;
+                  padding: 5px;
+                  &:hover{
+                     color: @brand-primary;
+                  }
+               }
+            }
+            p{
+               margin: 0 5px;
+            }
+         }
+
+      }
+   }
+
+   .is-fixed .pat-livesearch label{
+      color:@gray-dark;
+   }
+
+
+   .searchPage {
+
+      input[type="text"].form-control{
+         margin-top: 23px;
+         margin-left: -5px;
+
+      }
+
+      .actionMenu dd {
+         top: 55px;
+      }
+   }

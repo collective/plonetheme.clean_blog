@@ -2,7 +2,7 @@ Changelog
 ---------
 
 
-1.2 (unreleased)
+1.2 (2016-10-04)
 ----------------
 
 - uploaded whole dirs.

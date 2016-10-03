@@ -2,10 +2,10 @@ Changelog
 ---------
 
 
-1.3 (unreleased)
+1.2.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Package name upadated in docs.
 
 
 1.2 (2016-10-04)

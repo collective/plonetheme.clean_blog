@@ -25,7 +25,7 @@ Install plonetheme.clean_blog by adding it to your buildout::
     ...
 
     eggs =
-        plonetheme.clean_blog
+        plonetheme.cleanblog
 
 
 and then running ``bin/buildout``

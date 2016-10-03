@@ -19,6 +19,8 @@ test.plone_addon/
 var/
 node_modules/
 dist/
+build/
+mockup/
 # files
 lib64
 log.html

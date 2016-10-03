@@ -1,5 +1,4 @@
 graft src/plonetheme
 graft docs
-include *.rst
 include *.rst *.js *.json *.html *.png *.zip *.jpg LICENSE
-global-exclude *.pyc
+global-exclude *.pyc .DS_Store

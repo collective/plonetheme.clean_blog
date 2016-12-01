@@ -6,9 +6,7 @@ A minimal theme for Plone 5.
 
 .. image:: https://raw.githubusercontent.com/collective/plonetheme.clean_blog/master/demo.jpg
 
-Full size screenshot:
-
-.. image:: https://raw.githubusercontent.com/collective/plonetheme.clean_blog/master/docs/plonetheme.clean_blog-screenshot.jpg
+See screenshots below
 
 Installation
 ------------
@@ -65,3 +63,14 @@ Based on `Clean Blog Bootstrap Blog Theme Start Bootstrap`_
 .. _Clean Blog Demo: http://107.170.136.197:8080/Plone
 .. _Clean Blog Bootstrap Blog Theme Start Bootstrap: http://startbootstrap.com/template-overviews/clean-blog/
 .. _here: https://github.com/collective/plonetheme.clean_blog/blob/master/docs/index.rst
+
+Screenshots
+-----------
+
+Full size screenshot:
+
+.. image:: https://raw.githubusercontent.com/collective/plonetheme.clean_blog/master/docs/plonetheme.clean_blog-screenshot.jpg
+
+iPhone Plus screenshot:
+
+.. image:: https://raw.githubusercontent.com/collective/plonetheme.clean_blog/master/docs/plonetheme.clean_blog-screenshot-iphone-plus.jpg

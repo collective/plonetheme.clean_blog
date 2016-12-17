@@ -60,7 +60,6 @@ Credit
 Based on `Clean Blog Bootstrap Blog Theme Start Bootstrap`_
 
 .. _zip file: https://github.com/collective/plonetheme.clean_blog/blob/master/plonetheme.clean_blog.zip?raw=true
-.. _Clean Blog Demo: http://107.170.136.197:8080/Plone
 .. _Clean Blog Bootstrap Blog Theme Start Bootstrap: http://startbootstrap.com/template-overviews/clean-blog/
 .. _here: https://github.com/collective/plonetheme.clean_blog/blob/master/docs/index.rst
 

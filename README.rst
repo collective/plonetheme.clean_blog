@@ -6,7 +6,7 @@ A minimal theme for Plone 5.
 
 .. image:: https://raw.githubusercontent.com/collective/plonetheme.clean_blog/master/demo.jpg
 
-See screenshots below
+See additional screenshots below.
 
 Installation
 ------------

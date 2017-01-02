@@ -11,7 +11,7 @@ Changelog
 1.2.1 (2016-10-04)
 ------------------
 
-- Package name upadated in docs 
+- Package name updated in docs 
   [vikas-parashar]
 
 1.2 (2016-10-04)

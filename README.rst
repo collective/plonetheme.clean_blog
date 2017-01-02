@@ -20,7 +20,7 @@ Zip
 Buildout
 ~~~~~~~~
 
-Install plonetheme.clean_blog by adding it to your buildout::
+Install plonetheme.cleanblog by adding it to your buildout. Note the correct name of the egg!::
 
     [buildout]
 

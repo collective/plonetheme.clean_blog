@@ -2,7 +2,7 @@
 Clean Blog
 ==========
 
-A minimal theme for Plone 5.
+A minimal theme for Plone 5.x
 
 .. image:: https://raw.githubusercontent.com/collective/plonetheme.clean_blog/master/demo.jpg
 

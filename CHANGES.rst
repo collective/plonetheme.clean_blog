@@ -2,28 +2,25 @@ Changelog
 ---------
 
 
-1.2.2 (unreleased)
+1.2.2 (2017-01-01)
 ------------------
 
-- Nothing changed yet.
-
+- cleaned up docs, README, added classifiers 
+  [tkimnguyen]
 
 1.2.1 (2016-10-04)
 ------------------
 
-- Package name upadated in docs.
-
+- Package name upadated in docs 
+  [vikas-parashar]
 
 1.2 (2016-10-04)
 ----------------
 
-- uploaded whole dirs.
-- Added grunt setup.
-- Updated docs.
-
+- uploaded whole dirs, added grunt setup, updated docs 
+  [vikas-parashar]
 
 1.1 (2016-06-29)
 ----------------
 
-- Initial release.
-  [vikas-parashar]
+- Initial release [vikas-parashar]

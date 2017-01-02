@@ -31,7 +31,7 @@ setup(
     keywords='Python Plone Theme Web',
     author='Vikas Parashar',
     author_email='svnitvikas@gmail.com',
-    url='https://github.com/vikas-parashar/plonetheme.clean_blog/',
+    url='https://github.com/collective/plonetheme.clean_blog/',
     license='MIT License',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['plonetheme'],

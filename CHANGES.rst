@@ -5,7 +5,7 @@ Changelog
 1.2.2 (2017-01-01)
 ------------------
 
-- cleaned up docs, README, added classifiers, update repo URL
+- cleaned up docs, README, update repo URL
   [tkimnguyen]
 
 1.2.1 (2016-10-04)
